@@ -1,0 +1,354 @@
+/* Global Styles */
+#root {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+    --dark-blue: #28283D;
+    --grayish--blue: #87879D;
+    --light-grey: #D8D8D8;
+    --whiteish-grey: #FAFAFA;
+    --lighter-blue: #8FE3F9;
+    --light-blue: #4D96A9;
+    --dark-purple: #855FB1;
+    --light-purple: #D9B8FF;
+    --hover-blue: #71C0D4;
+    --hover-purple: #B18BDD;
+}
+
+/* Logo */
+.main-logo {
+    min-width: 5rem;
+    display: grid;
+    margin: 3rem auto;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    min-height: 9.5rem;
+
+}
+
+@media screen and (min-width:1440px) {
+    .hero-mobile {
+        display: none;
+    }
+}
+
+.hero-tablet,
+.hero-desktop {
+    display: none;
+}
+
+
+@media screen and (min-width:1440px) {
+    .right {
+        display: flex;
+        position: absolute;
+        margin: 0;
+        right: 0;
+    }
+
+    .left {
+        display: block;
+        position: absolute;
+        margin: 0;
+    }
+}
+
+
+
+/* Header Section */
+.header {
+    color: var(--dark-blue);
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.main-header {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+@media screen and (min-width:768px) {
+    .main-header {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .main-header {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+.heading {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.62rem;
+    max-width: 20rem;
+    margin: 0 auto;
+    color: var(--grayish--blue);
+}
+
+@media screen and (min-width:768px) {
+    .heading {
+        max-width: 28rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .heading {
+        max-width: 33rem;
+        font-size: 1.12rem;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 10rem;
+    }
+}
+
+.btn {
+    border: none;
+    color: var(--whiteish-grey);
+    font-weight: 900;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.download-btn {
+    min-width: 12rem;
+    margin: 0 0 1.5rem 0;
+    padding: 1.15rem 2rem;
+    background-color: var(--light-blue);
+}
+
+.download-btn:hover {
+    background-color: var(--hover-blue);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .download-btn {
+        margin: 0 .5rem 0 0;
+    }
+}
+
+.download-btn span {
+    color: var(--lighter-blue);
+}
+
+.secondary-btn {
+    min-width: 8.6rem;
+    background-color: var(--dark-purple);
+    padding: 1rem 1.50rem;
+}
+
+.secondary-btn:hover {
+    background-color: var(--hover-purple);
+    cursor: pointer
+}
+
+/*Vertical Line */
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 1rem;
+}
+
+
+.vl {
+    max-height: 5rem;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    bottom: 2rem;
+    border-left: 2px solid var(--light-grey);
+}
+
+.divider {
+    border: 1px solid var(--light-grey);
+    border-radius: 30px;
+    padding: 1rem 1.15rem;
+    max-width: 3.5rem;
+    font-weight: 900;
+    color: var(--grayish--blue);
+    position: relative;
+    margin: 3rem auto;
+    background-color: #fff;
+}
+
+/* Modern Use */
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.img-container img {
+    max-width: 9rem;
+    border-radius: 20px;
+    margin: .75rem;
+}
+
+@media screen and (max-width:320px) {
+    .img-container img {
+        margin: .25rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .img-container img {
+        max-width: 15.9rem;
+    }
+
+}
+
+
+.mack {
+    color: #4D96A9;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.secondary-header {
+    font-size: 2rem;
+    max-width: 20rem;
+    margin: 2rem auto 2rem;
+    line-height: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    .secondary-header {
+        max-width: 22rem;
+    }
+}
+
+@media screen and (min-width: 1044px) {
+    .secondary-header {
+        font-size: 2.5rem;
+        max-width: 27rem;
+        line-height: 2.75rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .second-heading {
+        max-width: 36rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .second-heading {
+        max-width: 33rem;
+        font-size: 1.12rem;
+    }
+}
+
+.last-divider {
+    position: relative;
+    top: 5.5rem;
+}
+
+/* Footer */
+.footer {
+    background: url(./assets/mobile/image-footer.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    text-align: center;
+    min-height: 40vh;
+    color: var(--whiteish-grey);
+    box-shadow: inset 0 0 0 2000px rgba(77, 150, 169, 0.85);
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        background: url(./assets/tablet/image-footer.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+        background: url(./assets/desktop/image-footer.jpg) no-repeat center 100% 100%;
+        min-height: 19.25rem;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    .footer-header {
+        font-size: 2.5rem;
+        margin: 0;
+        line-height: 2.75rem;
+    }
+}
+
+.footer-heading {
+    max-width: 18rem;
+    margin: 0 auto 2rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width:768px) {
+    .footer-heading {
+        max-width: 35rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .footer-heading {
+        max-width: 21rem;
+        margin: 0;
+        font-size: 1.12rem;
+    }
+}
+
+.footer-btn {
+    background-color: var(--dark-purple);
+}
+
+.footer-btn:hover {
+    background-color: var(--hover-purple);
+    cursor: pointer;
+}
+
+.footer-btn span {
+    color: var(--light-purple);
+}
